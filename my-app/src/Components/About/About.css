@@ -1,0 +1,142 @@
+.about-me {
+  color: #FFFFFF;
+  text-shadow: 2px 2px 2px #00000080;
+}
+
+.about-me-text {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  text-shadow: 2px 1px 1px #00000080;
+  margin-right: 25px;
+  padding: 10px;
+}
+
+.about-border {
+  padding: 15px;
+  border: 5px solid #000000;
+  width: 100%;
+  height: 75%;
+  margin-bottom: 5px;
+}
+
+.bg-image {
+  width: 98%;
+  height: 500px;
+  padding-left: 10px;
+  border-radius: 25px;
+}
+
+.image {
+  width: 50%;
+  height: 325px;
+  padding-left: 10px;
+  border-radius: 25px;
+}
+
+.bitmoji-image {
+  width: 48%;
+  height: 325px;
+  padding-left: 10px;
+  border-radius: 25px;
+}
+
+.mid-tier-titles {
+  color: #FFFFFF;
+  text-shadow: 2px 1px 2px #00000080;
+  padding-left: 10px;
+}
+
+.email {
+  color: #FFFFFF !important;
+  text-shadow: 2px 1px 2px #00000080;
+  padding-left: 5px;
+}
+
+.phone {
+  padding-left: 10px;
+}
+
+.email:hover {
+  color: #6a6a6a !important;
+  text-decoration: none;
+}
+
+.link-to-skills {
+  color: #FFFFFF;
+  text-shadow: 2px 1px 1px #00000080;
+  text-decoration: none;
+}
+
+/*.link-to-skills.html:hover {
+  color: #E44D26;
+  text-decoration: none;
+  text-shadow: none;
+  font-size: 1.1em;
+}
+
+.link-to-skills.css:hover {
+  color: #1572B6;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.link-to-skills.cpp:hover {
+  color: #D26383;
+  text-decoration: none;
+  text-shadow: none;
+}*/
+
+.skills {    
+  display: flex;
+  -webkit-flex-flow: wrap column; 
+  flex-flow: wrap column;
+  max-height: 250px;              
+}
+
+.skills-icons {
+  padding-right: 3px;
+}
+
+.firebase-icon {
+  height: 4%;
+  width: 4%;
+  padding-right: 3px;
+  filter: brightness(0) invert(1);
+}
+
+@media screen and (max-width: 767px) {
+  .about-me-text {
+    margin: auto;
+    letter-spacing: -2px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .bitmoji-image, .bg-image {
+    width: 100%;
+    height: auto;
+    padding-right: 0;
+  }
+
+  .skills {
+    display: inline-block;
+    max-height: auto;
+    -webkit-flex-flow: none;
+    flex-flow: none;
+  }
+}
+
+@media screen and (min-resolution: 2dppx) and (orientation: portrait) {
+  .about-me-text {
+    margin: auto;
+    letter-spacing: -2px;
+  }
+
+  .bitmoji-image, .image {
+    width: 100%;
+    padding: 5px;
+  }
+}

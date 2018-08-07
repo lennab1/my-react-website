@@ -1,0 +1,71 @@
+.personal-greeting {
+  color: #FFFFFF;
+  text-shadow: 2px 2px 3px #00000080;
+}
+
+.font-awesome-icons {
+  display: block;
+}
+
+.icons {
+  display: inline-block;
+}
+
+.icon {
+  font-size: 3em;
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding: 10px;
+}
+
+.icon:hover {
+  color: #6a6a6a;
+  font-size: 3.2em;
+}
+
+.border {
+  padding: 10px;
+  border: 5px solid #000000;
+  border-radius: 25px;
+  box-shadow: 5px 7px;
+  height: 225px;
+  width: 550px;
+  text-align:center;
+  margin: auto;
+  margin-top: 13%;
+  display: block;
+}
+
+.center-home {
+  text-align:center;
+  min-height: 910px;
+  height: 100%;
+  width: 100%;
+  border: 5px solid #000000;
+  padding: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .border {
+    width: 100%;
+    height: auto;
+  }
+
+  .center-home {
+    height: 650px;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .border {
+    width: 70%;
+    height: 20%;
+  }
+}
+
+@media screen and (min-resolution: 2dppx) and (orientation: portrait) {
+  .border {
+    width: 100%;
+    height: auto;
+  }
+}

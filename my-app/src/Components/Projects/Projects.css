@@ -1,0 +1,147 @@
+.my-projects, .project {
+  color: #FFFFFF;
+  text-shadow: 2px 2px 2px #00000080;
+}
+
+.project-text, .git {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  text-shadow: 2px 1px 1px #00000080;
+  margin-right: 80px;
+  padding: 10px;
+}
+
+.project-border {
+  padding: 15px;
+  border: 5px solid #000000;
+  width: 100%;
+  height: 75%;
+  margin-bottom: 5px;
+}
+
+.github, .gitlab {
+  color: #FFFFFF !important;
+  text-shadow: 2px 1px 2px #00000080;
+  padding-left: 5px;
+}
+
+.github:hover, .gitlab:hover {
+  color: #6a6a6a !important;
+  text-decoration: none;
+}
+
+.screenshots {
+  display: inline-block;
+}
+
+.Image{
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Image:hover {
+  opacity: 0.5;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 0;/* Sit on top (Only Navbar and footer above it)*/
+  padding-top: 150px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #000000; /* Fallback color */
+  background-color: #000000E6 /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 900px;
+  max-height: 500px;
+}
+
+/* Caption of Modal Image */
+.caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, .caption{    
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+@media only screen and (max-width: 767px){
+  .project-text {
+      margin: auto;
+      letter-spacing: -2px;
+  }
+    
+  .modal-content {
+      width: 100%;
+      height: auto;
+  }
+
+  .project {
+    text-align: center;
+  }
+
+  .Image {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 524px){
+  .Image {
+    width: 100%;
+  }
+}
+
+@media screen and (min-resolution: 2dppx) and (orientation: portrait) {
+  .project-text {
+      margin: auto;
+      letter-spacing: -2px;
+  }
+    
+  .modal-content {
+      width: 100%;
+      height: auto;
+  }
+
+  .project {
+    text-align: center;
+  }
+
+  .Image {
+    width: 100%;
+  }
+}
